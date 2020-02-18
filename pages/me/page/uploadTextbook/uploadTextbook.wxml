@@ -1,0 +1,49 @@
+<page>
+    <view class="text-body">
+        <view class="txt-header"></view>
+        <view class="select-type">
+            <view class="file-title">
+                <text>年级:</text>
+            </view>
+            <picker class="file-name"  bindchange="bindPickerChangeGrade" value="{{index}}" range="{{arrayGrade}}" >
+                  <text>{{listGrade[indexGrade].name}}</text>
+            </picker>     
+        </view>
+        <view class="select-file">
+            <view class="file-title">
+                <text>学科:</text>
+            </view>
+            <picker class="file-name"  bindchange="bindPickerChangeSubject" value="{{index}}" range="{{arraySubject}}" >
+                  <text>{{listSubject[indexSubject].name}}</text>
+            </picker>
+        </view>
+        <view class="select-file">
+            <view class="file-title">
+                <text>地区:</text>
+            </view>
+            <picker class="file-name"  bindchange="bindPickerChangeType" value="{{index}}" range="{{arrayArea}}" >
+                  <text>{{listArea[indexArea].name}}</text>
+            </picker>
+        </view>
+        <view class="select-file">
+            <view class="file-title">
+                <text>文件:</text>
+            </view>
+            <view class="file-name">
+                <text>{{fileName}}</text>
+            </view>
+            <view class="file-button">
+                <text bindtap="selectFile">选择</text>
+            </view> 
+        </view>
+
+        <view class="select-button">
+            <!-- <view class="button-view">
+                <text bindtap="uploadFile">提交</text>
+            </view> -->
+            <view class="weui-btn-area">
+              <button class="weui-btn" bindtap="uploadFile" >确认提交</button>
+            </view>
+        </view>
+    </view>
+</page>

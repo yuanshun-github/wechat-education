@@ -1,0 +1,47 @@
+<!-- 搜索框 -->
+<view class="choice-header">
+    <!-- confirm-type="search"更改键盘有搜索的选项 -->
+    <view class="resources-search">
+    </view>
+    <input type="text" class="resources-input" placeholder="请输入" confirm-type="search" bindconfirm="searchResource" value="{{keyword}}"></input>
+</view>
+<!-- 选项框 -->
+<view class="select-resources" >
+  <!-- 点击选择 -->
+  <!-- 年级 -->
+    <picker class="select-grade"  bindchange="bindPickerChangeGrade" value="{{index}}" range="{{arrayGrade}}" >
+        <view class="picker" >
+          {{listGrade[indexGrade].name}}
+        </view>
+    </picker>
+    <!-- 学科 -->
+    <picker class="select-grade"  bindchange="bindPickerChangeSubject" value="{{index}}" range="{{arraySubject}}" >
+        <view class="picker" >
+          {{listSubject[indexSubject].name}}
+        </view>
+    </picker>
+    <!-- 资料类型 -->
+    <picker class="select-type"  bindchange="bindPickerChangeType" value="{{index}}" range="{{arrayType}}" >
+        <view class="picker" >
+          {{listType[indexType].name}}
+        </view>
+    </picker>
+    <view class="subject-button"  bindtap="selectResource">
+        <text>查询</text>
+    </view>
+</view>
+<view class="resources-menu" style="height:{{listTop}}">
+    <view class="fileName-menu" wx:for-items="{{resourcesArr }}" wx:key="{{index}}" wx:for-item="item">
+        <view class="files" bindtap="downloadResourceFile" data-i="{{index}}">{{item.fileName}}</view>
+        <!-- 下载文件的时候显示 -->
+        
+        <view class="approve-box">
+              <view class="approve-pass" bindtap="approveResource" data-z="index" data-j="0" data-i="{{item.id}}">通过</view>
+              <view class="approve-fail" bindtap="approveResource" data-z="index" data-j="2" data-i="{{item.id}}">不通过</view>
+        </view>
+    </view>
+    <!--  -->
+  <view class="no-data-show" wx:if="{{!load}}">
+    <!-- <text>已见底</text> -->
+  </view>
+</view>

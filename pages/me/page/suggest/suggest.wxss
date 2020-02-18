@@ -1,0 +1,29 @@
+.suggest-box{
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.suggest-title{
+  width: 80%;
+  height: 40px;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 20px,0,10px,0;
+}
+
+.suggest-txt{
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  border:1px solid rgb(202, 199, 199);
+}
+
+.subject-button{
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgb(132, 236, 138);
+}

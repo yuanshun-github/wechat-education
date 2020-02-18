@@ -1,0 +1,19 @@
+<view class="me-background">
+  <!-- 头部 -->
+  <view class="me-header">
+    <image class="me-image" src="{{avatarUrl}}"></image>
+    <view class="me-name">{{nickName}}</view>
+    <view class="me-sign" bindtap="signIn">{{signIn}}</view>
+  </view>
+  <!-- 主体 -->
+  <view class="me-body">
+    <view class="test"></view>
+    <view class="showMenu" wx:for-items='{{menuList}}' wx:key='{{index}}'>
+      <view class="me-menu">
+        <image class="left-image" src="../../image/{{item.image}}"></image>
+        <view class="left-menu" bindtap="meFunc" data-i="{{item.name}}">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

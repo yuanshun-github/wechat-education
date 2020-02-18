@@ -1,0 +1,153 @@
+.choice-header {
+  width: 100%;
+  background: #48D1CC;
+  height: 50px;
+}
+
+.resources-search{
+  height: 5px;
+  width: 100%;
+}
+
+.resources-input{
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+  border:1px solid #FFFFFF;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.select-resources{
+  width: 100%;
+  margin-top:10px;
+  height: 25px;
+}
+
+.select-grade{
+  float: left;
+  border:1px solid  #48D1CC;
+  border-radius: 5px;
+  margin-left: 7%; 
+  width: 15%;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  vertical-align:middle;
+}
+.select-type{
+  float: left;
+  border:1px solid  #48D1CC;
+  border-radius: 5px;
+  margin-left: 7%;
+  width: 22%;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  vertical-align:middle;
+}
+
+.subject-button{
+  float: left;
+  border:1px solid  rgb(100, 105, 105);
+  background: #48D1CC;
+  border-radius: 5px;
+  margin-left: 7%;
+  width: 15%;
+  text-align: center;
+  font-size: 15px;
+  vertical-align:middle;
+  height: 25px;
+}
+
+.resources-menu{
+  width: 100%;
+  
+}
+.no-data-show{
+  width: 100%;
+  margin-top: 15px;
+  font-size: 10px;
+  color: rgb(160, 152, 152);
+  text-align: center;
+}
+.fileName-menu{
+  margin-top: 20px;
+  margin:0 auto;
+  width: 90%;
+  text-align: center;
+  color: rgb(90, 80, 235);
+}
+.files{
+  margin-top: 10px;
+  font-size: 13px;
+}
+.down-status{
+  display:inline;
+}
+
+.down-percent{
+  width: 70%;
+}
+
+.percent-box{
+  margin-top: 10px;
+  width:100%;
+  height: 20px;
+}
+
+.download-percent{
+  float: left;
+  width: 80%;
+  height: 100%;
+  background: rgba(191, 196, 192, 0.596);
+  border-radius: 5px;
+  text-align: 20px;
+}
+
+.progress-show{
+  height: 100%; 
+  width: 90%;
+  font-size:10px;
+  background: rgba(191, 196, 192, 0.596);
+  border-radius: 5px;
+  text-align: 20px;
+}
+
+.download-cancel{
+  float: right;
+  width: 10%;
+  height: 100%;
+}
+
+.approve-box{
+  margin-top: 10px;
+  width:100%;
+  height: 20px;
+}
+
+.approve-pass{
+  margin-left: 20%;
+  float: left;
+  width:15%;
+  height: 20px;
+  background: #48D1CC;
+  font-size: 10px;
+  text-align: center;
+  border:1px solid  rgb(100, 105, 105);
+  border-radius: 5px;
+  line-height: 20px;
+}
+
+.approve-fail{
+  margin-right: 20%;
+  float: right;
+  width:15%;
+  height: 20px;
+  background: #48D1CC;
+  font-size: 10px;
+  text-align: center;
+  border:1px solid  rgb(100, 105, 105);
+  border-radius: 5px;
+  line-height: 20px;
+}

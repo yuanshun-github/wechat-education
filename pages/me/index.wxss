@@ -1,0 +1,70 @@
+/* pages/me/index/index.wxss */
+.me-background{
+  width: 100%;
+  background: rgb(222, 243, 240);
+}
+
+.me-header{
+  width:100%;
+  height: 60px;
+  background: rgb(222, 243, 240);
+}
+
+.me-image{
+  float: left;
+  margin-left: 20px;
+  margin-top:10px;
+  height: 40px;
+  width: 40px;
+}
+
+.me-name{
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+  margin-top:15px;
+}
+
+.me-sign{
+  float: right;
+  margin-right: 5%;
+  margin-top:15px;
+  border-radius: 5px;
+  background: rgb(35, 112, 201);
+  font-size: 13px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.me-body{
+  width: 100%;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+}
+
+.test{
+  width: 100%;
+  height: 10px;
+}
+.showMenu{
+  width: 94%;
+  margin: 0 auto;
+  border-bottom: 1px rgba(175, 174, 174, 0.685) solid;
+}
+
+.me-menu{
+  width: 100%;
+  height: 30px;
+}
+
+.left-image{
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+
+.left-menu{
+  float: left;
+  margin-left: 10px;
+}

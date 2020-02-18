@@ -1,0 +1,25 @@
+.suggest-box{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.suggest-txt{
+  margin-top: 10px;
+}
+
+.suggest-button{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.delete-button{
+  float: left;
+  margin-left: 10%;
+  color: rgb(177, 167, 167);
+}
+
+.suggest-date{
+  float: right;
+}

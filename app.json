@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/resource/index",
+    "pages/test/index",
+    "pages/auto/index",
+    "pages/common/template/template",
+    
+    "pages/textbook/index",
+    "pages/me/index",
+    "pages/me/page/information/information",
+    "pages/me/page/upload/upload",
+    "pages/me/page/uploadTextbook/uploadTextbook",
+    "pages/me/page/role/role",
+    "pages/me/page/approve/approve",
+    "pages/me/page/suggest/suggest",
+    "pages/me/page/seeSuggest/seeSuggest",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/resource/index",
+        "iconPath": "image/resource.png",
+        "selectedIconPath": "image/resource_HL.png",
+        "text": "资料"
+      },
+      {
+        "pagePath": "pages/textbook/index",
+        "iconPath": "image/textbook.png",
+        "selectedIconPath": "image/textbook_HL.png",
+        "text": "课本"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "image/resource.png",
+        "selectedIconPath": "image/resource_HL.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

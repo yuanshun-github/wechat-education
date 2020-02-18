@@ -1,0 +1,50 @@
+<!-- indicator-dots是否显示面板指示点；autoplay是否开启自动播放；interval是轮播的间隔时间；duration是持续时间；circular -->
+<import src ="../common/template/template.wxml"/>
+<view class="page">
+    
+    
+    <template is="swiperItem" data="{{...swiperItem}}"></template>
+    <template is="searchItem" data="{{...searchItem}}"></template>
+    <!-- 选项框 -->
+    <view class="select-resources" style="height:{{searchHeight}}">
+      <!-- 点击选择 -->
+      <!-- 年级 -->
+        <picker class="select-grade" style="height:{{selectHeight}}" bindchange="bindPickerChangeGrade" value="{{index}}" range="{{arrayGrade}}" >
+            <view class="picker" >
+              {{listGrade[indexGrade].name}}
+            </view>
+        </picker>
+        <!-- 学科 -->
+        <picker class="select-grade" style="height:{{selectHeight}}" bindchange="bindPickerChangeSubject" value="{{index}}" range="{{arraySubject}}" >
+            <view class="picker" style="height:{{selectHeight}}">
+              {{listSubject[indexSubject].name}}
+            </view>
+        </picker>
+        <!-- 资料类型 -->
+        <picker class="select-type" style="height:{{selectHeight}}" bindchange="bindPickerChangeType" value="{{index}}" range="{{arrayType}}" >
+            <view class="picker" style="height:{{selectHeight}}">
+              {{listType[indexType].name}}
+            </view>
+        </picker>
+        <view class="subject-button" style="height:{{selectHeight}}" bindtap="selectResource">
+            <text>查询</text>
+        </view>
+        
+    </view>
+    <!-- 展示资料 -->
+    <view class="no-data-show" wx:if="{{resourcesArr.length==0}}">
+      <text>资料下载</text>
+    </view>
+    <view class="resources-menu" style="height:{{listTop}}">
+        <view class="fileName-menu" wx:for-items="{{resourcesArr }}" wx:key="{{index}}" wx:for-item="item">
+            <view class="files" bindtap="downloadResourceFile" data-i="{{index}}">{{item.fileName}}</view>
+            <!-- 下载文件的时候显示 -->
+           
+        </view>
+        <!--  -->
+      <view class="no-data-show" wx:if="{{!load}}">
+        <!-- <text>已见底</text> -->
+      </view>
+    </view>
+</view>
+

@@ -1,0 +1,68 @@
+<import src ="../../../common/template/template.wxml"/>
+
+<page>
+  <!-- 如果没有填写信息的form表单 -->
+  <view wx:if="{{noSubjectInfomation}}">
+      <view class="weui-cells__title">请填写个人信息</view>
+      <view class="weui-cells weui-cells_after-title">
+        
+      </view>
+      <form bindsubmit="formSubmit" >
+          <template is="inputItem" data="{{...nameItem}}"></template>
+          <template is="inputItem" data="{{...phoneItem}}"></template>
+          <template is="inputItem" data="{{...emailItem}}"></template>
+          <template is="inputItem" data="{{...addressItem}}"></template>
+          <view class="weui-btn-area">
+            <button class="weui-btn" form-type='submit' >确认提交</button>
+          </view>
+          
+      </form>
+        
+
+  </view>
+  <!-- 填写表单结束 -->
+  <view wx:else>
+      <view class="weui-cells__title">修改个人信息</view>
+      <view class="weui-cells weui-cells_after-title">
+        
+      </view>
+      <form bindsubmit="formSubmit" >
+          <template is="inputItem" data="{{...nameItem}}"></template>
+          <template is="inputItem" data="{{...phoneItem}}"></template>
+          <template is="inputItem" data="{{...emailItem}}"></template>
+          <template is="inputItem" data="{{...addressItem}}"></template>
+          <template is="inputReadonly" data="{{...creditItem}}"></template>
+          <view class="weui-btn-area">
+            <button class="weui-btn" form-type='submit' >确认修改</button>
+          </view>
+          
+      </form>
+  </view>
+</page>
+
+
+<!-- <view class="information-body">
+      <view class="show-line">
+          <view class="show-left">姓名</view>
+          <view class="show-right">{{user.userName}}</view>
+      </view>
+      <view class="show-line">
+          <view class="show-left">积分</view>
+          <view class="show-right">{{user.credit}}</view>
+      </view>
+
+      <view class="show-line">
+          <view class="show-left">电话</view>
+          <view class="show-right">{{user.phone}}</view>
+      </view>
+
+      <view class="show-line">
+          <view class="show-left">地址</view>
+          <view class="show-right">{{user.address}}</view>
+      </view>
+
+      <view class="show-line">
+          <view class="show-left">邮箱</view>
+          <view class="show-right">{{user.email}}</view>
+      </view>
+    </view> -->

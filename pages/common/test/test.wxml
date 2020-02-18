@@ -1,0 +1,6 @@
+<template name="testTemp">
+  <view>
+  {{tt}}
+  </view>
+  <view>{{mm}}</view>
+</template>

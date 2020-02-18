@@ -1,0 +1,51 @@
+<!-- indicator-dots是否显示面板指示点；autoplay是否开启自动播放；interval是轮播的间隔时间；duration是持续时间；circular -->
+<import src ="../common/template/template.wxml"/>
+
+<template is="swiperItem" data="{{...swiperItem}}"></template>
+<!-- 搜索框 -->
+<template is="searchItem" data="{{...searchItem}}"></template>
+<!-- <view class="choice-header" style="height:{{searchHeight}}">
+    <view class="resources-search">
+    </view>
+    <input type="text" class="resources-input" placeholder="请输入" confirm-type="search" bindconfirm="searchTextbook" value="{{keyword}}"></input>
+</view> -->
+<!-- 选项框 -->
+<view class="select-resources" style="height:{{searchHeight}}">
+  <!-- 点击选择 -->
+  <!-- 年级 -->
+    <picker class="select-grade" style="height:{{selectHeight}}" bindchange="bindPickerChangeGrade" value="{{index}}" range="{{arrayGrade}}" >
+        <view class="picker" >
+          {{listGrade[indexGrade].name}}
+        </view>
+    </picker>
+    <!-- 学科 -->
+    <picker class="select-grade" style="height:{{selectHeight}}" bindchange="bindPickerChangeSubject" value="{{index}}" range="{{arraySubject}}" >
+        <view class="picker" style="height:{{selectHeight}}">
+          {{listSubject[indexSubject].name}}
+        </view>
+    </picker>
+    <!-- 地区 -->
+    <picker class="select-type" style="height:{{selectHeight}}" bindchange="bindPickerChangeType" value="{{index}}" range="{{arrayArea}}" >
+        <view class="picker" style="height:{{selectHeight}}">
+          {{listArea[indexArea].name}}
+        </view>
+    </picker>
+    <view class="subject-button" style="height:{{selectHeight}}" bindtap="selectTextbook">
+        <text>查询</text>
+    </view>
+</view>
+<!-- 展示资料 -->
+<view class="no-data-show" wx:if="{{resourcesArr.length==0}}">
+  <text>资料下载</text>
+</view>
+<view class="resources-menu" style="height:{{listTop}}">
+    <view class="fileName-menu" wx:for-items="{{textbookArr }}" wx:key="{{index}}" wx:for-item="item">
+        <view class="files" bindtap="downloadTextbookFile" data-i="{{index}}">{{item.fileName}}</view>
+        <!-- 下载文件的时候显示 -->
+        
+    </view>
+    <!--  -->
+  <view class="no-data-show" wx:if="{{!load}}">
+    <text>已见底</text>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view>
+  <form bindsubmit="subjectSuggest" >
+      <view class="suggest-box">
+        <view class="suggest-title">欢迎各位用户对我们提供一些建议，以便反馈给我们进行改进</view>
+        <textarea class="suggest-txt" maxlength="1000" name="suggest" placeholder="请输入您的建议" value="{{suggest}}"></textarea>
+        
+    </view>
+        <button class="subject-button" form-type="submit">提交</button>
+  </form>
+</view>
+

@@ -1,0 +1,10 @@
+<view class="suggest-box" >
+    <view wx:for-items="{{suggestList}}" wx:key="{{index}}" wx:for-item="item">
+        <view class="suggest-txt">{{index+1}}：{{item.suggest}}</view>
+        <view class="suggest-button">
+            <view class="delete-button" bindtap="deleteSuggest" data-i="{{item.id}}" data-j="{{index}}">删除</view>
+            <view class="suggest-date">[{{item.suggestDateStr}}]</view>
+        </view>
+    </view>
+    
+</view>
